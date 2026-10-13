@@ -1,0 +1,18 @@
+issue,count,unit
+Exact duplicate rows,35,rows
+Duplicate trade_id,35,rows
+Missing side,15,trades
+Missing price,25,trades
+Missing quantity,20,trades
+Missing bid_qty_1,30,trades
+Missing ask_price_1,20,trades
+Timestamp format: DD/MM/YYYY,78,trades
+Timestamp format: Unix epoch,40,trades
+"Side label not lower-case (BUY, Sell)",119,trades
+"Symbol not 'BTCUSDT' (btcusdt, BTC/USDT, BTC-USDT)",60,trades
+"Price stored as text with $ or ,",50,trades
+Negative price,6,trades
+"Extreme price (rolling median, about x100)",8,trades
+Zero quantity,6,trades
+Crossed book (bid_1 > ask_1),10,trades
+Rows not in time order,1013,rows
